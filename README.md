@@ -22,5 +22,5 @@ python benchmark_omnivoice_zero_shot.py --num-step 2 --speed 1.18 --warmup
 python benchmark_omnivoice_zero_shot.py --num-step 1 --speed 1.18 --warmup
 ```
 
-`sin_2241_9304867830.wav` is the reference clip with matching `ref_text` already set in the notebook.
+`sin_2282_8643512444.wav` is the reference clip with matching `ref_text` already set in the notebook.
 `homelands_omnivoice_sample.wav` is included as an optional reference clip, but its exact transcript must be set before using it.

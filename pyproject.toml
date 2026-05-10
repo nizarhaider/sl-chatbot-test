@@ -1,0 +1,24 @@
+[project]
+name = "sl-chatbot-test"
+version = "0.1.0"
+description = "Minimal OmniVoice zero-shot cloning benchmark for an RTX 4090"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+    "ipykernel>=7.2.0",
+    "ipywidgets>=8.1.8",
+    "notebook>=7.4.7",
+    "omnivoice>=0.1.5",
+    "soundfile>=0.13.1",
+    "torch>=2.11.0",
+    "torchaudio>=2.11.0",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }
+torchaudio = { index = "pytorch-cu128" }
